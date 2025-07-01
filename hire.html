@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/23d4f1e1b6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div id="projects-header">
+    <div class="container">
+
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="hire.html">Skills</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <!-- -------------------HIRE ME SECTION ----------------------------->
+  <section class="hire-section">
+    <div class="hire-container">
+      <div class="hire-intro">
+        <h1>Let’s Build Something Amazing Together 🚀</h1>
+        <p>You’re not just hiring a developer, you’re investing in dedication, creativity, and results. Choose how we
+          can work together:</p>
+      </div>
+
+      <div class="hire-cards">
+        <!--------Card 1 ---------->
+        <div class="hire-card">
+          <h2>🚀Future-Ready Developer</h2>
+          <p>I build clean, responsive websites and apps using HTML, CSS, JS, Java & Sql.</p>
+          <ul>
+            <li>Front-End + Back-End Development</li>
+            <li>UI/UX Focused Design</li>
+            <li>Basic API & SQL Integration</li>
+          </ul>
+          <a href="contact.html" class="hire-btn">Hire Roshani</a>
+        </div>
+        <!--------- Card 2 ------------>
+        <div class="hire-card">
+          <h2>🤝Creative & Reliable Teammate</h2>
+          <p>I’ve worked on apps, college sites, and real client projects during training.</p>
+          <ul>
+            <li>2-Month Internship Experience</li>
+            <li>Strong Work Ethic & Ownership</li>
+            <li>Open to Internships & Full-time Roles</li>
+          </ul>
+          <a href="contact.html" class="hire-btn">Work With Me</a>
+        </div>
+        <!----------- Card 3-------------->
+        <div class="hire-card">
+          <h2>⚡Fast Learner & Problem Solver</h2>
+          <p>Always curious, I adapt quickly to tools & tech while solving real-world bugs.</p>
+          <ul>
+            <li>Debugging & Code Optimization</li>
+            <li>Team Projects & Client-ready Approach</li>
+            <li>Learning New Tools Every Day</li>
+          </ul>
+          <a href="contact.html" class="hire-btn">Let’s Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ---------Hire  me ---------- -->
+  <div class="container-hire">
+    <h1>Why Hire Me?</h1>
+    <ul>
+      <li>Strong foundation in Java, Web & Android Development</li>
+      <li>Internship experience with real-world projects</li>
+      <li>Content Creator & Tech Educator on YouTube</li>
+      <li> Fast learner and team collaborator</li>
+    </ul>
+    <h3>What I Can Do for You:</h3>
+    <ul>
+      <li> Build responsive websites using HTML, CSS, JS, PHP</li>
+      <li>Develop clean Android apps with Java + XML</li>
+      <li> Create smooth UI/UX with Figma & code</li>
+      <li> Write clear technical content, docs & guides</li>
+    </ul>
+    <h3>Let’s Work Together!</h3>
+    <p><strong>Email:</strong> roshanikswha@gmail.com</p>
+    <p><strong>Connect:</strong> LinkedIn | GitHub | YouTube</p>
+
+    <div class="button-group">
+      <a href="contact.html" class="btn btn2">Contact Me</a>
+      <!-- <a href="icon/Roshani Kushwaha CV.pdf" class="btn btn2">Download CV</a> -->
+       <a href="icon/Roshani Kushwaha CV.pdf" download class="btn btn2">Download Cv</a>
+    </div>
+  </div>
+
+  <!---------- Contact Section ------------>
+  <section class="section youtube">
+    <h2>Let’s Connect</h2>
+    <p>Email: roshanikswha@gmail.com</p>
+    <div class="contact-icons">
+      <a href="https://github.com/Roshani107" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/roshani-kushwaha/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@UpCoders" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+   
+  </section>
+ <div class="copyright">
+      <p>Copyright @ Roshani Kushwaha.Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+    </div>
+  <script>function opentab(tabname) {
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+      // Show about-content only after clicking tab
+      document.getElementById("about-content").style.display = "block";
+    }</script>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }            
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz6H5K-no436D93Vr6chg3Ozaa15PKUCtQajuU_1Mv3kbyyoFOBFVMeRRqyB9i0bo_scQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent sucessfully!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>

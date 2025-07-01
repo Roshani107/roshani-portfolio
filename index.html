@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23d4f1e1b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="hire.html">Skills</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+         <p>Software Engineer</p>
+         <h1>Hi, I'm <span>Roshani Kushwaha</span> </h1><h2> Developer, Educator, and Digital Creator </h2>
+          <h5>Aspiring developer, building real projects as I grow into the software industry.</h5>
+         </div>
+
+   <!---------------about------------------>
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="icon/bg.jpg">
+             <div class="button-group">
+            <a href="project.html" class="btn">View Projects</a>
+            <a href="hire.html" class="btn">Hire me</a>
+          </div>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title header-text">About Me</h1>
+                <p><b>Hello!  I'm Roshani kushwaha, </b>
+                     A passionate tech creator specializing in web and Android development.
+                    I’ve built projects like an Airline Management System (Java + MySQL), a Forum Website (PHP + SQL), a meme-sharing Android app, 
+                   and a responsive college portal.I’m skilled in Java, PHP, HTML, CSS, SQL, Bootstrap, and comfortable working with APIs and databases.
+                 Through my YouTube channel Up Coders, I simplify coding for beginners — combining clarity with creativity.
+               I’ve also led real-time tech projects and trained students, which sharpened my logic and communication.
+              <br>Now I’m ready to contribute to impactful tech teams and keep building what matters.  <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                         <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                  </div>
+                  <!-- skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                         <ul>
+                <li><span>Programming Languages:</span><br>Java, Python </li>
+                <li><span>Web Development: </span><br>HTML, CSS, JavaScript, PHP </li>
+                <li><span>Databases</span><br>SQL</li>
+                <li><span>Tools & IDEs:</span><br> MySql,Android Studio, IntelliJ IDEA, NetBeans, VS Code, GitHub </li>
+                <li><span>Other Skills:</span><br> UI/UX Design, API Integration, Technical Documentation</li>
+        
+              </ul>
+                    </div>
+                    <!------- education------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> Diploma in Computer Science & Engineering [2021-2024]  </span>8.0 CGPA<br> 
+                         KM. Mayawati Govt. Girls Polytechnic,Ghaziabad</li>
+                             </li>
+                            <li><span>12th Grade, Mathematics [2020-2021]   </span>  73.2%<br>
+                                Urmila Vidya Mandir Inter College, Deoria   </li>
+                            <li><span>10th Grade, Mathematics [2018-2019]   </span> 75.6% <br>
+                                 Urmila Vidya Mandir Inter College, Deoria   </li>
+            
+                        </ul>
+                    </div>
+                    <!-- experience -->
+                    <div class="tab-contents" id="experience">
+                           <ul>
+                             <li><span> Computer Science Teacher  </span>July 2024 – April 2025  <br>BN Central Public School, Civil Liness Deoria, Uttar Pradesh 
+                            <br>
+                                 • Taught HTML, CSS, Java, and Python using real-world examples and projectbased learning 
+                             <br>• Taught with clarity, resolved doubts, and handled class responsibilities like a team leader. <br>• Focused on logic-building, coding 
+                                fundamentals, and exam prep for senior classes </li>
+
+                            <li><span>Android App Development Trainee </span>: Aug 2023 – Oct 2023 <br>  National Institute of Electronics and Information Technology [NIELIT]   <br>
+                                    • Built and debugged Android applications using Java and Android Studio <br>
+                                    • Gained hands-on experience in UI/UX design, real-time app testing, and performance enhancement  </li>
+
+                            <li><span>  Team Leader | Leadership & Collaboration Program </span><br> Mahindra pride classroom & Nandi foundation Training Program <br>
+                               • Led peer group activities focused on planning, coordination, and teamwork <br>
+                               • Secured 1st prize for leadership performance and collaborative problem-solving </li>
+                        </ul>
+                    </div>
+             <!-- achievements  -->
+                     <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>🏆 Leadership & Team Management </span><br> Led team to <b>1st Prize</b> in Mahindra Group Challenge by demonstrating strong leadership, planning, and coordination skills.</li>
+                            <li><span>💻 Web Development Excellence </span><br> Secured <b>2nd Prize</b> in Web Development Competition for delivering an innovative and responsive front-end design.</li>
+                            <li><span>👩‍🏫 Classroom & Training Management</span><br>Managed a full classroom independently, resolved coding doubts, and enhanced students’ logical thinking.</li>
+                            <li><span>📺 Content Creation & Online Teaching</span><br>Built an engaged online learning community via YouTube channel<b> Up Coders </b>by creating simplified and beginner-friendly tutorials.</li>
+                            <li><span>🌟 Core Strengths</span><br>Known for initiative, sharp logical thinking, and excellent peer coordination</li>
+                        </ul>
+                    </div>
+        </div>
+    </div>
+   </div>
+   <!-------Learning Journey--------->
+
+   <div id="Learning">
+    <div class="container">
+        <h1 class="sub-title"> My Learning Journey</h1>
+        <div class="Learning-list">
+              <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Full Stack Web Developer </h2>
+                <h5> Clean code to life with logic and design</h5><p>Built fully functional websites using HTML, CSS, JS, and PHP — designed responsive, user-focused frontends with working backend integrations.</p>  
+                <a href="#">Learn More</a>
+            </div> 
+            
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2> Android App Developer</h2>
+                <h5>Real-world apps, coded from scratch</h5><p>Created Android apps in Java with API, database, and activity navigation.</p>  
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-database"></i>
+                <h2>Backend Integration </h2>
+              <h5>  Dynamic data. Seamless connection</h5><p>Used PHP, SQL & APIs to manage dynamic content and user data flow.</p>  
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                
+                <i class="fa-brands fa-square-github"></i>
+                <h2>Git & GitHub</h2>
+                <h5>Clean code. Controlled versions</h5><p>Tracked changes, managed branches, and collaborated through GitHub.</p>  
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+               
+                <i class="fa-brands fa-square-youtube"></i>
+                <h2>YouTube Up Coders</h2> 
+               <h5> Simple,fun,and beginner-friendly</h5><p>Simplified complex topics into easy video tutorials on my YouTube channel Up Coders.</p>  
+                <a href="#">Learn More</a>
+            </div>
+            
+            
+            <div>
+               <i class="fa-solid fa-building-user"></i>
+                <h2>UI/UX Enthusiast</h2>
+                <h5> Designs that feel as good as they look</h5><p>Applied practical design thinking in web and app interfaces with focus on user-friendly layout, mobile responsiveness, and visual clarity.</p>  
+                <a href="#">Learn More</a>
+            </div> 
+           <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                   <h2>Freelancer</h2>
+                <h5>Multi-skilled. Self-driven. Client-ready</h5><p>Delivered small-scale freelance projects involving websites, app interfaces, and content editing — flexible with tools, strong on results.</p>  
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+               <i class="fa-solid fa-blog"></i>
+                <h2>Vlogger</h2>
+               <h5> My stories. My voice. My vibe</h5><p>Created lifestyle & travel vlogs that reflect creativity, confidence, and connection — expressing freely beyond the code.</p>  
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+   </div>
+   <!----------Projects------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="icon/college.png" alt="Image 1">
+                <div class="layer">
+                    <h3>College Website</h3>
+                    <h4> Tech Stack:</h4>
+                    <p>   HTML, CSS,JS, PHP</p>
+                    <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="icon/airline.png" alt="Image 2">
+                <div class="layer">
+                    <h3>Airline Management System</h3>
+                    <h4> Tech Stack:</h4>
+                    <p> Core Java, GUI, JDBC, MySQL </p>
+                    <a href="https://github.com/Roshani107/Airline-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="icon/php.png" alt="Image 3">
+                <div class="layer">
+                    <h3>PHP Forum Website</h3>
+                    <h4> Tech Stack:</h4>
+                    <p> PHP, MySQL, Bootstrap  </p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+       
+        </div>
+        <a href="project.html" class="btn">See more</a>
+    </div>
+   </div>
+   <!------------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>roshanikswha@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/roshani-kushwaha/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Roshani107"><i class="fa-brands fa-github"></i></a>
+                   <a href="https://www.youtube.com/@UpCoders">  <i class="fa-brands fa-youtube"></i></a>
+                   <a href="mailto::roshanikswha@gmail.com"> <i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="icon/Roshani Kushwaha CV.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email"  placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<div class="copyright">
+        <p>Copyright @ Roshani Kushwaha.Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+ 
+<script>function opentab(tabname) {
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+      // Show about-content only after clicking tab
+      document.getElementById("about-content").style.display = "block";
+    }</script>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }            
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz6H5K-no436D93Vr6chg3Ozaa15PKUCtQajuU_1Mv3kbyyoFOBFVMeRRqyB9i0bo_scQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
