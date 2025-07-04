@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio Website</title>
+    <title>Roshani Kushwaha - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/23d4f1e1b6.js" crossorigin="anonymous"></script>
 </head>
@@ -25,38 +25,41 @@
 
         <div class="header-text">
          <p>Software Engineer</p>
-         <h1>Hi, I'm <span>Roshani Kushwaha</span> </h1>
-         <h2> Developer, Educator, and Digital Creator </h2>
+         <h1>Hi, I'm <span>Roshani Kushwaha</span></h1>
+         <h2>Developer, Educator, and Digital Creator</h2>
           <p>Aspiring developer, building real projects as I grow into the software industry.</p>
          </div>
+    </div>
+   </div>
 
    <!---------------about------------------>
-
    <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-            <img src="icon/bg.jpg">
-             <div class="button-group">
-            <a href="project.html" class="btn">View Projects</a>
-            <a href="hire.html" class="btn">Hire me</a>
-          </div>
+                <img src="icon/bg.jpg" alt="Roshani Kushwaha">
+                <div class="button-group">
+                    <a href="project.html" class="btn">View Projects</a>
+                    <a href="hire.html" class="btn">Hire me</a>
+                </div>
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title header-text">About Me</h1>
-                <p><b>Hello!  I'm Roshani kushwaha, </b>
-                     A passionate tech creator specializing in web and Android development.
-                    I’ve built projects like an Airline Management System (Java + MySQL), a Forum Website (PHP + SQL), a meme-sharing Android app, 
-                   and a responsive college portal.I’m skilled in Java, PHP, HTML, CSS, SQL, Bootstrap, and comfortable working with APIs and databases.
-                 Through my YouTube channel Up Coders, I simplify coding for beginners — combining clarity with creativity.
-               I’ve also led real-time tech projects and trained students, which sharpened my logic and communication.
-              <br>Now I’m ready to contribute to impactful tech teams and keep building what matters.  <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                         <p class="tab-links" onclick="opentab('experience')">Experiences</p>
-                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
-                  </div>
-                  <!-- skills -->
+                <h1 class="sub-title">About Me</h1>
+                <p><b>Hello! I'm Roshani Kushwaha,</b><br>
+                A passionate tech creator specializing in web and Android development.
+                I've built projects like an Airline Management System (Java + MySQL), a Forum Website (PHP + SQL), a meme-sharing Android app, 
+                and a responsive college portal. I'm skilled in Java, PHP, HTML, CSS, SQL, Bootstrap, and comfortable working with APIs and databases.
+                Through my YouTube channel Up Coders, I simplify coding for beginners — combining clarity with creativity.
+                I've also led real-time tech projects and trained students, which sharpened my logic and communication.
+                <br>Now I'm ready to contribute to impactful tech teams and keep building what matters.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                </div>
+                <!-- skills -->
                     <div class="tab-contents active-tab" id="skills">
                          <ul>
                 <li><span>Programming Languages:</span><br>Java, Python </li>
@@ -242,69 +245,89 @@
     </div>
 </div>
  
-<script>function opentab(tabname) {
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      for (let tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-
-      // Show about-content only after clicking tab
-      document.getElementById("about-content").style.display = "block";
-    }</script>
-
 <script>
-    
+// Tab functionality
+function opentab(tabname) {
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(tablink of tablinks){
+
+    for (let tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
-    for(tabcontent of tabcontents){
+    for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
-</script>
 
-<script>
+// Mobile menu functionality
+var sidemenu = document.getElementById("sidemenu");
 
-    var sidemenu = document.getElementById("sidemenu");
+function openmenu() {
+    sidemenu.style.right = "0";
+    sidemenu.classList.add("active");
+}
 
-    function openmenu(){
-        sidemenu.style.right= "0";
+function closemenu() {
+    sidemenu.style.right = "-250px";
+    sidemenu.classList.remove("active");
+}
+
+// Close menu when clicking on a link (mobile)
+document.querySelectorAll('#sidemenu a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            closemenu();
+        }
+    });
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        sidemenu.style.right = "auto";
+        sidemenu.classList.remove("active");
     }
-    function closemenu(){
-        sidemenu.style.right= "-200px";
-    }            
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz6H5K-no436D93Vr6chg3Ozaa15PKUCtQajuU_1Mv3kbyyoFOBFVMeRRqyB9i0bo_scQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent sucessfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
+});
 
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+// Contact form functionality
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz6H5K-no436D93Vr6chg3Ozaa15PKUCtQajuU_1Mv3kbyyoFOBFVMeRRqyB9i0bo_scQ/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+if (form) {
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!";
+                setTimeout(function() {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Error sending message. Please try again.";
+            });
+    });
+}
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+</script>
 
 </body>
 </html>
