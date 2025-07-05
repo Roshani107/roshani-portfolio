@@ -759,7 +759,7 @@ form .btn2:hover {
     
     .row {
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
     
     .about-col-1, .about-col-2 {
