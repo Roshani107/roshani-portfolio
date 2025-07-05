@@ -194,7 +194,7 @@ nav .fa-solid {
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
 }
@@ -303,9 +303,9 @@ nav .fa-solid {
 /* YouTube Section */
 .youtube {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 0px;
     color: #000000;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 /* Contact */
@@ -675,7 +675,8 @@ form .btn2:hover {
     padding: 20px 0;
     color: #ccc;
     font-size: 0.9rem;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 0;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -730,7 +731,17 @@ form .btn2:hover {
         cursor: pointer;
         font-size: 24px;
     }
-    
+    /* Header Styles */
+#header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(icon/cute.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
     .header-text {
         padding-top: 30%;
         text-align: center;
@@ -768,7 +779,7 @@ form .btn2:hover {
     
     .tab-titles {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         gap: 10px;
     }
     
@@ -854,10 +865,11 @@ form .btn2:hover {
     font-size: 35px;
     margin-top: 0px;
     /* color:#ff017cd2; */
-    background: linear-gradient(to right, #ffffff, #ffffff);
+ background: linear-gradient(45deg, #ff0000, #f9f9f9, #119600);
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px 1px #d6336c;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
 }
 
@@ -868,19 +880,15 @@ form .btn2:hover {
     animation: fadeInUp 5s ease forwards;
     max-width: 770px;
     margin: auto;
+    
 
 }
 
 .headers-texts p:first-child {
     font-size: 30px;
-    /* color: #00ffaa; */
     white-space: nowrap;
     overflow: hidden;
-    /* border-right: 2px solid rgba(255,255,255,0.75); */
-    /* animation: typing 2.5s steps(20) 1, blink 0.8s step-end infinite; */
     animation: typing 3s steps(18, end) forwards;
-    /* animation: typing 5s steps(20) infinite; */
-    /* animation: typing 4s steps(20) alternate forwards; */
 
 
 }
@@ -889,15 +897,16 @@ form .btn2:hover {
     font-size: 60px;
     font-weight: 700;
     margin: 45px 0 5px;
+
 }
 
 .headers-texts h1 span {
     font-size: 60px;
-    background: linear-gradient(to right, #ffffff, #e9e3e6);
-    background-clip: text;
+    background: linear-gradient(45deg, #ff004f, #ff6b6b);
     -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 1px 0px 1px #d6336c;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
 
 }
@@ -906,10 +915,11 @@ form .btn2:hover {
     font-style: italic;
     font-size: 40px;
     margin-top: 0px;
-    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background: linear-gradient(45deg, #f9f9f9, #ffffff);
+    -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
-    text-shadow: 1px 1px 1px black;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
 }
 
@@ -974,11 +984,12 @@ form .btn2:hover {
 
     .headers-texts h1 span {
         font-size: 30px;
-        background: linear-gradient(to right, #ffffff, #e9e3e6);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        text-shadow: 1px 0px 1px #d6336c;
+        
+ background: linear-gradient(45deg, #ff004f, #ff6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
 
     }
@@ -987,10 +998,11 @@ form .btn2:hover {
         font-style: italic;
         font-size: 20px;
         margin-top: 0px;
-        background: linear-gradient(to right, #ff6a00, #ee0979);
-        background-clip: text;
-        color: transparent;
-        text-shadow: 1px 1px 1px black;
+        background: linear-gradient(45deg, #f9f9f9, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
     }
 
@@ -1020,26 +1032,28 @@ form .btn2:hover {
 
 /* -----------------projects add kaaa section--------------------------  */
 .project-section {
-    padding: 60px 10px;
+    margin-top:100px;
+    padding: 30px 80px;
     /* background: linear-gradient(to right, #141e30, #243b55); */
     color: white;
 }
 
-.project-container {
+ .project-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     max-width: 800px;
     margin: auto;
-    padding: 20px 5px;
+    padding: 100 50px;
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
-    background-color: white;
+    background-color: white; 
+
 }
 
-.project-image img {
+/* .project-image img {
 
     box-shadow: 5 5px 5px rgba(0, 0, 0, 0.4);
     width: 300px;
@@ -1047,8 +1061,25 @@ form .btn2:hover {
     border-radius: 10px;
     object-fit: cover;
     padding-left: 30px;
+} */
+.project-image img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
+.project-image:hover img {
+    transform: scale(1.05);
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.3s ease;
+}
 .project-description {
     max-width: 1000px;
 }
@@ -1060,11 +1091,9 @@ form .btn2:hover {
     margin-bottom: 0px;
     color: white;
     border-radius: 30px;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px 4px black;
     text-decoration: none;
     font-weight: bold;
-
-    margin-left: 100px;
 }
 
 .project-description p {
@@ -1083,15 +1112,15 @@ form .btn2:hover {
     text-decoration: none;
     border-radius: 6px;
     transition: 0.3s;
-    background-color: #ee0979;
+    background-color:  #ff0a80 ;
 }
 
 .project-description .btn:hover {
-    background-color: #ee0979;
+    background-color:#ff0000;
     color: white;
 }
 
-/* faltu css */
+/* faltu css  for phone*/
 @media (max-width: 768px) {
     .project-card {
         flex-direction: column;
@@ -1103,6 +1132,7 @@ form .btn2:hover {
         max-width: 100%;
         margin: 0;
         padding: 0;
+
     }
 }
 
@@ -1111,12 +1141,40 @@ form .btn2:hover {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    padding: 50px;
     border-radius: 12px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(to right, #d86ba0, #395384, #152332);
+    margin-bottom: 50px;
+    box-shadow: 0 20px 40px rgba(255, 0, 79, 0.2);
+    background: rgba(255, 248, 248, 0.1);
 
+}
+
+.project-card div {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(45deg, #ff004f, #ff6b6b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.project-card div:hover::before {
+    transform: scaleX(1);
 }
 
 
@@ -1129,7 +1187,7 @@ form .btn2:hover {
 
 .project-description h2 {
     font-size: 24px;
-    color: #ffffff;
+    color: #ff004f;
 }
 
 .project-description p {
@@ -1264,8 +1322,8 @@ form .btn2:hover {
 .container-hire h3 {
     font-size: 24px;
     margin-top: 30px;
-    color: #000000;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: #ff0000;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
 }
 
 /* Lists */
@@ -1277,9 +1335,9 @@ form .btn2:hover {
 .container-hire ul li {
     padding: 10px 0;
     font-size: 18px;
-    color: #000000;
+    color: #ccc;
     text-shadow: 2px rgb(255, 255, 255);
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000000;
 }
 
 .container-hire ul li::before {
@@ -1341,6 +1399,7 @@ form .btn2:hover {
 /* Courses Section */
 .courses-section {
     padding: 40px 50px;
+    margin-top: 50px;
 }
 
 .course-header {
@@ -1351,7 +1410,7 @@ form .btn2:hover {
 .course-header h1 {
     font-size: 2.5rem;
     color: #ffffff;
-    text-shadow: 1px 1px 1px#000000;
+    text-shadow: 2px 2px 4px#000000;
 }
 
 .course-header p {
@@ -1363,13 +1422,12 @@ form .btn2:hover {
 .course-card {
     display: flex;
     padding: 15px;
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    /* background: linear-gradient(to right, #8e2de2, #4a00e0);
     background: linear-gradient(to right, #134e5e, #71b280);
     background: linear-gradient(to right, #ff4b2b, #1f005c);
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
     background: linear-gradient(to right, #4a00, #ffef5b, #4a00);
     color: #1a1a1a;
-
     border-radius: 12px;
     margin-bottom: 40px;
     overflow: hidden;
